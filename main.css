@@ -1,0 +1,156 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header button{
+    display: block;
+    width: 150px;
+    height: 35px;
+    background: #5cb85c;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#conteudo-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#conteudo-popup h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#conteudo-popup p{
+    margin-left: 10%;
+}
+
+#conteudo-popup img{
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+#fechar-popup {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#fechar-popup:hover {
+    background-color: #aaa;
+}
+
+/* FUNCIONALIDADE */
+.funcionalidade{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-self: flex-start;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.formulario form textarea{
+    resize: none;
+    align-self: flex-start;
+}
+.formulario form button{
+    margin-top: 20px;
+    align-self: flex-end;
+    padding: 5px 10px;
+}
+.resultado{
+    width: 40%;
+    align-self: flex-start;
+    overflow: auto;
+    height: 100%;
+    max-height: 362px;
+    position: relative;
+    border: 1.5px solid #2a00b3;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#quantidadeP {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Botão copiar */
+#copiarTexto{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#copiarTexto img{
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

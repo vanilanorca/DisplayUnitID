@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Unit ID Catcher</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="author" content="Vinicius Lopes Alves">
+</head>
+
+<body>
+    <div id="login">
+        
+    </div>
+
+    <div id="mainContent">
+        <header>
+            <h1>Capturador de Display Unit ID</h1>
+            <button id="abrir-popup">Manual de Uso</button>
+        </header>
+        
+        <div id="popup">
+            <div id="conteudo-popup">
+                <h2>Manual de uso</h2>
+    
+                <p>1- Dentro da campanha, clicar na aba "Content allocation (group view)":</p>
+                <img src="assets/fluxo1.png" alt="">
+                <p>2- Abrir a aba que contém o número de displays que a campanha possui:</p>
+                <img src="assets/fluxo2.png" alt="">
+                <p>3- Copiar toda a lista da TAB:</p>
+                <img src="assets/fluxo3.png" alt="">
+                <p>4- Colar no 'textarea' deste sistema.</p>
+            </div>
+            <button id="fechar-popup">X</button>
+        </div>
+
+        <div class="funcionalidade">
+            <div class="formulario">
+                <form action="" id="myForm">
+                    <textarea name="conteudo" id="conteudo" cols="85" rows="20"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="resultado">   
+                <p id="quantidadeP"><span id="quantidade">0</span> display units.</p>
+                <p id="resultado"> <!--Gerado por JS--> </p>
+                <button id="copiarTexto"><img src="assets/copy-icon.png" alt=""></button>
+            </div>
+            
+        </div>
+
+
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
