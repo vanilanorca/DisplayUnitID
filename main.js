@@ -46,33 +46,37 @@ form.addEventListener("submit", function(event) {
   if(linhas.length <= 1){
     alert("Insira um conteúdo válido \uD83D\uDE21")
   }
+
+
+
+  // BOTAO DE COPIAR O TEXTO
+  // paragrafo = #resultado
+  const button = document.querySelector("#copiarTexto");
+
+  button.addEventListener("click", function() {
+    // cria um elemento temporário para armazenar o texto
+    const tempElement = document.createElement("textarea");
+    tempElement.value = textoComQuebrasDeLinha
+
+    // adiciona o elemento temporário à página
+    document.body.appendChild(tempElement);
+
+    // seleciona o texto dentro do elemento temporário
+    tempElement.select();
+
+    // copia o texto selecionado para a área de transferência
+    document.execCommand("copy");
+
+    // remove o elemento temporário da página
+    document.body.removeChild(tempElement);
+
+    // exibe uma mensagem de confirmação
+    alert("Texto copiado para a área de transferência!");
+  });
 });
 
 
-// BOTAO DE COPIAR O TEXTO
-// paragrafo = #resultado
-const button = document.querySelector("#copiarTexto");
 
-button.addEventListener("click", function() {
-  // cria um elemento temporário para armazenar o texto
-  const tempElement = document.createElement("textarea");
-  tempElement.value = document.getElementById('resultado').textContent;
-
-  // adiciona o elemento temporário à página
-  document.body.appendChild(tempElement);
-
-  // seleciona o texto dentro do elemento temporário
-  tempElement.select();
-
-  // copia o texto selecionado para a área de transferência
-  document.execCommand("copy");
-
-  // remove o elemento temporário da página
-  document.body.removeChild(tempElement);
-
-  // exibe uma mensagem de confirmação
-  alert("Texto copiado para a área de transferência!");
-});
 
 
 
